@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
+import { BLE } from '@ionic-native/ble';
 
-import { BluetoothRequestService } from './services/ble';
+import { BluetoothRequestService } from './services/BluetoohRequest';
 
 @NgModule({
   declarations: [],
-  providers: [BluetoothRequestService],
+  providers: [
+    BLE,
+    BluetoothRequestService
+  ],
   exports: []
 })
-export class BLEModule { }
+export class SimpleBluetoothModule { }

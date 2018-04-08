@@ -1,11 +1,11 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { LibModule } from 'quickstart-lib';
+import { SimpleBluetooth } from 'simple-bluetooth-ionic-module';
 
 import { AppComponent }  from './app.component';
 
 @NgModule({
-  imports:      [ BrowserModule, LibModule],
+  imports:      [ BrowserModule, SimpleBluetooth],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

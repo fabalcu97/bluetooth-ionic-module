@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LibService } from 'quickstart-lib';
+import { LibService } from 'simple-bluetooth-ionic-module';
 
 @Component({
   selector: 'demo-app',

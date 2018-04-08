@@ -13,7 +13,6 @@ export class BluetoothRequestService {
   // Attributes
     private services: any;
     private deviceId: string;
-    public connectionStatus$: Observable<boolean>;
 
   // Methods
     constructor (private bleService: BLE) {
@@ -35,16 +34,16 @@ export class BluetoothRequestService {
 
     public request (data: string) {
       return new Observable((observer) => {
-        this.sendMessage(data).then( resp => {
+        this.sendMessage(data).then( () => {
           this.readMessage().then(resp => {
             observer.next({
               data: resp
             });
+            observer.complete();
           }).catch(err => {
             observer.error({error: err});
           });
         });
-        observer.complete();
       });
     }
 

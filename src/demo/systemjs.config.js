@@ -39,7 +39,7 @@
       rxjs: {
         defaultExtension: 'js'
       },
-      'quickstart-lib': {
+      'simple-bluetooth-ionic-module': {
         main: 'index.js',
         defaultExtension: 'js',
         meta: {
