@@ -13,9 +13,11 @@ export class BluetoothRequestService {
   // Attributes
     private services: any;
     private deviceId: string;
+    private bleService: BLE;
 
   // Methods
-    constructor (private bleService: BLE) {
+    constructor (bleService: BLE) {
+      this.bleService = bleService;
       this.services = {
         read: {
           uuid: READ_SERVICE_UUID,

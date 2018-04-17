@@ -1,6 +1,6 @@
 {
   "name": "simple-bluetooth-ionic-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library QuickStart package.json from the documentation, supplemented with testing support",
   "main": "./bundles/simple-bluetooth-ionic-module.umd.js",
   "module": "./simple-bluetooth-ionic-module.es5.js",
@@ -76,6 +76,7 @@
     "zone.js": "^0.8.4"
   },
   "dependencies": {
-    "@ionic-native/ble": "^4.6.0"
+    "@ionic-native/ble": "^4.6.0",
+    "ionic-angular": "^3.9.2"
   }
 }
